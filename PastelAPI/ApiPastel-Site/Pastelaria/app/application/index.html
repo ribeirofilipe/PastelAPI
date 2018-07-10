@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="pastelaria">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pastelaria</title>
+    <link rel="stylesheet" href="libs/css/vendors.bundle.css">
+    <link rel="stylesheet" href="libs/css/style.bundle.css">
+    <link rel="stylesheet" href="style/style.css">
+
+    <script src="libs/js/angular.min.js"></script>
+    <script src="libs/js/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+    <script src="libs/js/vendors.bundle.js"></script>
+    <script src="libs/js/scripts.bundle.js"></script>
+
+    <script src="application/app.js"></script>
+    <script src="application/app.routes.js"></script>
+    <script src="application/app.constantes.js"></script>
+
+    <script src="usuarios/usuarios.js"></script>
+    <script src="usuarios/usuariosService.js"></script>
+    <script src="usuarios/usuariosCreateCtrl.js"></script>
+
+    <script src="saborPastel/pastel.js"></script>    
+    <script src="saborPastel/pastelService.js"></script>
+    <script src="saborPastel/pastelCreateCtrl.js"></script>
+
+    <script src="pedidos/pedidos.js"></script> 
+    <script src="pedidos/pedidosService.js"></script>
+    <script src="pedidos/pedidosCreateCtrl.js"></script>
+
+    <script src="pedidosItens/pedidosItens.js"></script> 
+    <script src="pedidosItens/pedidosItensService.js"></script>
+    <script src="pedidosItens/pedidosItensCreateCtrl.js"></script>
+
+    <script src="dashboard/dashboard.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+	<script>
+		WebFont.load({
+			google: {
+				"families": ["Poppins:300,400,500,600,700", "Roboto:300,400,500,600,700"]
+			},
+			active: function () {
+				sessionStorage.fonts = true;
+			}
+		});
+	</script>
+</head>
+    <body class="m-page--fluid m--skin- m-content--skin-light2 m-header--fixed m-header--fixed-mobile m-aside-left--enabled m-aside-left--skin-dark m-aside-left--offcanvas m-footer--push m-aside--offcanvas-default">
+        <!-- begin:: Page -->
+        <div class="m-grid m-grid--hor m-grid--root m-page">
+            <!-- BEGIN: Header -->
+            <header id="m_header" class="m-grid__item    m-header " m-minimize-offset="200" m-minimize-mobile-offset="200" ng-include="'template/header/header.html'">                
+            </header>
+            <!-- END: Header -->
+            <!-- begin::Body -->
+            <div class="m-grid__item m-grid__item--fluid m-grid m-grid--ver-desktop m-grid--desktop m-body">
+                <!-- BEGIN: Left Aside -->
+                <button class="m-aside-left-close  m-aside-left-close--skin-dark " id="m_aside_left_close_btn">
+                    <i class="la la-close"></i>
+                </button>
+                <div id="m_aside_left" class="m-grid__item	m-aside-left  m-aside-left--skin-dark m-menu-dropdown" ng-include="'template/menu/menu.html'">                
+                </div>
+                <!-- END: Left Aside -->
+                <div class="m-grid__item m-grid__item--fluid m-wrapper">   
+                    <ui-view></ui-view>  
+                </div>
+            </div>
+            <!-- end:: Body -->
+            <!-- begin::Footer -->
+            <footer class="m-grid__item m-footer " ng-include="'template/footer/footer.html'">                
+            </footer>
+            <!-- end::Footer -->
+        </div>
+        <!-- end:: Page -->
+       
+        <!-- begin::Scroll Top -->
+        <div id="m_scroll_top" class="m-scroll-top">
+            <i class="la la-arrow-up"></i>
+        </div>
+        <!-- end::Scroll Top -->        
+    </body>
+
+    <!-- end: :Body -->
+</html>   
