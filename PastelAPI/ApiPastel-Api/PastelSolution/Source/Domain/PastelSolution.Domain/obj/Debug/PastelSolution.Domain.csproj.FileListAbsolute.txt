@@ -31,3 +31,11 @@ C:\Users\Filipe\Desktop\PastelApiXUXU\FormTalentos\FormTalentos\PastelAPIXuxu\Pa
 C:\Users\Filipe\Desktop\PastelApiXUXU\FormTalentos\FormTalentos\PastelAPIXuxu\PastelSolution\Source\Domain\PastelSolution.Domain\obj\Debug\PastelSolution.Domain.csproj.CoreCompileInputs.cache
 C:\Users\Filipe\Desktop\PastelApiXUXU\FormTalentos\FormTalentos\PastelAPIXuxu\PastelSolution\Source\Domain\PastelSolution.Domain\obj\Debug\PastelSolution.Domain.dll
 C:\Users\Filipe\Desktop\PastelApiXUXU\FormTalentos\FormTalentos\PastelAPIXuxu\PastelSolution\Source\Domain\PastelSolution.Domain\obj\Debug\PastelSolution.Domain.pdb
+C:\Users\Filipe\Desktop\PastelAPI\PastelAPI\ApiPastel-Api\PastelSolution\Source\Domain\PastelSolution.Domain\bin\Debug\PastelSolution.Domain.dll
+C:\Users\Filipe\Desktop\PastelAPI\PastelAPI\ApiPastel-Api\PastelSolution\Source\Domain\PastelSolution.Domain\bin\Debug\PastelSolution.Domain.pdb
+C:\Users\Filipe\Desktop\PastelAPI\PastelAPI\ApiPastel-Api\PastelSolution\Source\Domain\PastelSolution.Domain\bin\Debug\PastelSolution.Domain.Core.dll
+C:\Users\Filipe\Desktop\PastelAPI\PastelAPI\ApiPastel-Api\PastelSolution\Source\Domain\PastelSolution.Domain\bin\Debug\PastelSolution.Domain.Core.pdb
+C:\Users\Filipe\Desktop\PastelAPI\PastelAPI\ApiPastel-Api\PastelSolution\Source\Domain\PastelSolution.Domain\obj\Debug\PastelSolution.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Filipe\Desktop\PastelAPI\PastelAPI\ApiPastel-Api\PastelSolution\Source\Domain\PastelSolution.Domain\obj\Debug\PastelSolution.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Filipe\Desktop\PastelAPI\PastelAPI\ApiPastel-Api\PastelSolution\Source\Domain\PastelSolution.Domain\obj\Debug\PastelSolution.Domain.dll
+C:\Users\Filipe\Desktop\PastelAPI\PastelAPI\ApiPastel-Api\PastelSolution\Source\Domain\PastelSolution.Domain\obj\Debug\PastelSolution.Domain.pdb

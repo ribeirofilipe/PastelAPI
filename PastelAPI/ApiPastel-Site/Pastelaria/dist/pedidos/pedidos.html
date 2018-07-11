@@ -51,7 +51,6 @@
                                 <th ng-click="vm.ordenarPor('Cliente.Nome')">Nome do Cliente</th>
                                 <th ng-click="vm.ordenarPor('Produto.Nome')">Sabor do Pastel</th>
                                 <th ng-click="vm.ordenarPor('Quantidade')">Quantidade</th>
-                                <th ng-click="vm.ordenarPor('Data')">Data</th>
                                 <th>Ações</th>
                             </tr>
                         </thead>
@@ -63,7 +62,6 @@
                                 <td>{{item.Cliente.Nome}}</td>
                                 <td>{{item.Produto.Nome}}</td>
                                 <td>{{item.Quantidade}}</td>
-                                <td>{{item.Data | date:'dd/MM/yyyy'}}</td>
                                 <td>
                                     <a ng-click="vm.editar(item.Id)" class="btn btn-warning btn-sm m-btn  m-btn m-btn--icon">
                                         <span>

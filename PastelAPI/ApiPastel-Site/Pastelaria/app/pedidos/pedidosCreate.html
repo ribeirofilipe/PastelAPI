@@ -78,7 +78,7 @@
                         <div class="form-group m-form__group row">
                             <label class="col-lg-2 col-form-label">Nome Cliente:</label>
                             <div class="col-lg-3">
-                                <select id="pedidoClienteId" name="pedidoClienteId" ng-model="vm.pedido.ClienteId" ng-options="usuarios.Id as usuarios.Nome for usuarios in vm.usuarios"
+                                <select id="pedidoClienteId" name="pedidoClienteId" ng-model="vm.pedido.Cliente.Id" ng-options="usuarios.Id as usuarios.Nome for usuarios in vm.usuarios"
                                     class="form-control m-input" ng-class="{'input-error' : pedidoForm.pedidoClienteId.$error.required && pedidoForm.pedidoClienteId.$touched}"
                                     required>
                                     <option value="">Selecione o Cliente</option>
@@ -89,7 +89,7 @@
                         <div class="form-group m-form__group row">
                             <label class="col-lg-2 col-form-label">Sabor do Pastel:</label>
                             <div class="col-lg-3">
-                                <select id="saborPastel" name="saborPastel" ng-model="vm.pedido.ProdutoId" ng-options="pasteis.Id as pasteis.Nome for pasteis in vm.pasteis"
+                                <select id="saborPastel" name="saborPastel" ng-model="vm.pedido.Produto.Id" ng-options="pasteis.Id as pasteis.Nome for pasteis in vm.pasteis"
                                     class="form-control m-input" ng-class="{'input-error' : pedidoForm.saborPastel.$error.required && pedidoForm.saborPastel.$touched}"
                                     required>
                                     <option value="">Selecione o Sabor</option>
@@ -103,34 +103,35 @@
                             <div class="col-lg-2">
                                 <input id="pedidoQuantidade" name="pedidoQuantidade" type="number" ng-model="vm.pedido.Quantidade" class="form-control m-input"
                                     ng-class="{'input-error' : pedidoForm.pedidoQuantidade.$error.required && pedidoForm.pedidoQuantidade.$touched}"
-                                    required max="3">
+                                    required>
                                 <span class="m-form__help">Porfavor, entre com a quantidade</span>
                             </div>
                         </div>
-                        <div class="form-group m-form__group row">
-                            <label class="col-lg-2 col-form-label">Data:</label>
-                            <div class="col-lg-3">
-                                <input id="pedidoData" name="pedidoData" type="date" ng-model="vm.pedido.Data" class="form-control m-input" ng-class="{'input-error' : pedidoForm.pedidoData.$error.required && pedidoForm.pedidoData.$touched}"
-                                    required>
-                                <span class="m-form__help">Porfavor, entre com a data</span>
-                            </div>
+                    </div>
+                    <div class="form-group m-form__group row">
+                        <label class="col-lg-2 col-form-label">Pedir para:</label>
+                        <div class="col-lg-3">
+                            <input id="pedidoData" name="pedidoData" type="date" ng-model="vm.pedido.Data" class="form-control m-input" ng-class="{'input-error' : pedidoForm.pedidoData.$error.required && pedidoForm.pedidoData.$touched}"
+                                required>
+                            <span class="m-form__help">Porfavor, entre com a data</span>
                         </div>
-                        <div class="m-portlet__foot m-portlet__no-border m-portlet__foot--fit">
-                            <div class="m-form__actions m-form__actions--solid">
-                                <button ng-if="vm.estado == vm.estados.editar" ng-click="vm.salvar(vm.pedido)" class="btn btn-success" ui-sref="dashboard"
-                                    id="salvarEdit" ng-disabled="pedidoForm.$invalid">Alterar</button>
-                                <div ng-if="vm.estado == vm.estados.inserir" id="salvar" class="btn-group">
-                                    <button type="submit" class="btn btn-success" ng-click="vm.salvar(vm.pedido)" ng-disabled="pedidoForm.$invalid">Salvar</button>
-                                    <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="true" ng-disabled="pedidoForm.$invalid">
-                                        <span class="sr-only">Toggle Dropdown</span>
-                                    </button>
-                                    <div class="dropdown-menu" x-placement="bottom-start">
-                                        <a class="dropdown-item" ui-sref="#" ng-click="vm.salvar(vm.pedido, true)">Salvar e Inserir Outro</a>
-                                    </div>
+                    </div>
+                    <div class="m-portlet__foot m-portlet__no-border m-portlet__foot--fit">
+                        <div class="m-form__actions m-form__actions--solid">
+                            <button ng-if="vm.estado == vm.estados.editar" ng-click="vm.salvar(vm.pedido)" class="btn btn-success" ui-sref="dashboard"
+                                id="salvarEdit" ng-disabled="pedidoForm.$invalid">Alterar</button>
+                            <div ng-if="vm.estado == vm.estados.inserir" id="salvar" class="btn-group">
+                                <button type="submit" class="btn btn-success" ng-click="vm.salvar(vm.pedido)" ng-disabled="pedidoForm.$invalid">Salvar</button>
+                                <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="true" ng-disabled="pedidoForm.$invalid">
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <div class="dropdown-menu" x-placement="bottom-start">
+                                    <a class="dropdown-item" ui-sref="#" ng-click="vm.salvar(vm.pedido, true)">Salvar e Inserir Outro</a>
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </form>
                 <!--end::Form-->
-                </div>
+            </div>
