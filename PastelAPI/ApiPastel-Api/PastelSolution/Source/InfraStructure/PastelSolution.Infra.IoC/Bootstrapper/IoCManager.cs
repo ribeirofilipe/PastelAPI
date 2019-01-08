@@ -37,6 +37,10 @@ namespace PastelSolution.Infra.IoC.Bootstrapper
             container.Register<IPedidoItemDomainService, PedidoItemDomainService>();
             container.Register<IPedidoItemAppService, PedidoItemAppService>();
 
+            container.Register<ISetorRepository, SetorRepository>();
+            container.Register<ISetorDomainService, SetorDomainService>();
+            container.Register<ISetorAppService, SetorAppService>();
+
             return container;
 
         }

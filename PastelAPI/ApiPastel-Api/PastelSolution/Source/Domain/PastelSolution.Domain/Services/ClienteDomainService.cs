@@ -7,8 +7,7 @@ namespace PastelSolution.Domain.Services
     public class ClienteDomainService : DomainServiceBase<Cliente>, IClienteDomainService
     {
         public ClienteDomainService(IClienteRepository repositoryBase) : base(repositoryBase)
-        {
-            
+        {            
         }
     }
 }

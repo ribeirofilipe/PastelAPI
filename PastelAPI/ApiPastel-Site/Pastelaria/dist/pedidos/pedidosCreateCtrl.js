@@ -95,6 +95,8 @@
         }
 
         function insertPedido(pedido, clean) {
+            pedido.produtoId = pedido.Produto.Id;
+            pedido.clienteId = pedido.Cliente.Id;
             PedidosService.post(pedido)
                 .then(function () {
                     if (clean) {

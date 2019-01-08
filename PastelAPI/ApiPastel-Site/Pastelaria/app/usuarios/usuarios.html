@@ -63,7 +63,7 @@
                         <thead>
                             <tr>
                                 <th style="width: 50.25px;">Selecionar</th>
-                                <th style="width: 50.25px;" ng-click="vm.ordenarPor('Id')">Id</th>
+                                <!-- <th style="width: 50.25px;" ng-click="vm.ordenarPor('Id')">Id</th> -->
                                 <th ng-click="vm.ordenarPor('Nome')">Nome</th>
                                 <th style="width: 250px;">Ações</th>
                             </tr>
@@ -73,8 +73,10 @@
                                 <td>
                                     <input id="selecao" type="checkbox" ng-model="item.selecionado">
                                 </td>
-                                <td>{{item.Id}}</td>
+                                <!-- <td>{{item.Id}}</td> -->
                                 <td>{{item.Nome}}</td>
+                                <td>{{item.Endereco}}</td>
+                                <td>{{item.Setor}}</td>
                                 <td>
                                     <a ng-click="vm.editar(item.Id)" class="btn btn-warning btn-sm m-btn  m-btn m-btn--icon">
                                         <span>

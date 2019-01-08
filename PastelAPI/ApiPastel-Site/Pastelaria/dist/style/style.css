@@ -14,3 +14,9 @@
 /* line 15, app/sass/includes/usuarios.scss */
 table {
   text-align: center; }
+
+/* line 19, app/sass/includes/usuarios.scss */
+.title-ipastel:hover {
+  text-decoration: none;
+  color: white;
+  transition-duration: 1s; }
